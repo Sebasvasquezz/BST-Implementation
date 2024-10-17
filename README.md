@@ -97,9 +97,9 @@ This Binary Search Tree (BST) implementation allows users to insert, delete, sea
     cd BST
     ```
 
-2. Run the test of the implementation:
+2. Run the tests of the implementation:
     ```sh
-    mvn tests
+    mvn test
     ```
 
 ## Built With
