@@ -1,54 +1,20 @@
-# Binary Search Tree (BST) Implementation
+# BST
 
-This project implements a generic *Binary Search Tree (BST)* in Java, which adheres to the Java List interface. The BST provides efficient operations for insertion, deletion, searching, and traversals while supporting multiple data types using Java generics. It includes functionalities to check if the tree is balanced, calculate its height, and perform level-order, in-order, pre-order, and post-order traversals.
+This project implements a Binary Tree data structure in Java. The Binary Tree supports various operations such as insertion, searching, traversal (in-order, pre-order, post-order, and level-order), finding minimum and maximum values, checking height, verifying balance, and clearing the tree.
 
-### Key Features Implemented
+## Features
 
-1. *Insertion (add)*
-   - *Purpose*: Adds a new node to the tree while maintaining the binary tree properties. Each new value is placed in the correct position to ensure the tree's structure remains valid.
-   - *Implementation*: The method is recursive and places the value in the left or right subtree depending on its comparison to the current node.
-
-2. *Search (search)*
-   - *Purpose*: Finds and returns the node containing the specified value, or returns null if the value is not present in the tree.
-   - *Implementation*: The method traverses the tree recursively, comparing the target value with the current node to find the desired node.
-
-3. *Deletion (remove)*
-   - *Purpose*: Removes a node while maintaining the BST properties. It handles three cases: deleting a leaf node, a node with one child, and a node with two children.
-   - *Implementation*: For nodes with two children, the in-order successor or predecessor is used to replace the node, ensuring the tree's structure is maintained.
-
-4. *Traversal Methods*
-   - *In-order Traversal (inOrderTraversal)*: Visits nodes in ascending order. This method is used to produce a sorted sequence of node values.
-   - *Pre-order Traversal (preOrderTraversal)*: Visits the root first, followed by the left and right subtrees.
-   - *Post-order Traversal (postOrderTraversal)*: Visits the left and right subtrees first, then the root. Useful for freeing or deleting nodes.
-   - *Level-order Traversal (levelOrderTraversal)*: Visits all nodes at each level, starting from the root, using a queue for breadth-first traversal.
-
-5. *Find Minimum (findMin)*
-   - *Purpose*: Finds the smallest value in the tree, which is located at the leftmost node.
-   - *Implementation*: The method recursively traverses the left subtree to find and return the leftmost node.
-
-6. *Find Maximum (findMax)*
-   - *Purpose*: Finds the largest value in the tree, located at the rightmost node.
-   - *Implementation*: The method traverses the right subtree to find and return the rightmost node.
-
-7. *Height (height)*
-   - *Purpose*: Calculates the height of the tree, defined as the longest path from the root to any leaf.
-   - *Implementation*: This recursive method computes the height of the left and right subtrees and returns the greater value plus one for the current node.
-
-8. *Check if the Tree is Balanced (isBalanced)*
-   - *Purpose*: Determines if the tree is balanced by comparing the height of its left and right subtrees.
-   - *Implementation*: The method recursively checks each subtree and returns true if the height difference between left and right is at most one for all nodes.
-
-9. *Level-Order Traversal (levelOrderTraversal)*
-   - *Purpose*: Traverses the tree level by level starting from the root, using a breadth-first search.
-   - *Implementation*: This function uses a queue to process each node, visiting all nodes at each level before moving to the next level.
-
-10. *Clear (clear)*
-    - *Purpose*: Removes all nodes from the tree, effectively making it empty.
-    - *Implementation*: The method sets the root node to null, clearing the entire tree.
-
-11. *Count Nodes (countNodes)*
-    - *Purpose*: Returns the total number of nodes present in the tree.
-    - *Implementation*: This function recursively traverses the tree, counting each node as it traverses both the left and right subtrees.
+- **Add**: Add elements to the tree.
+- **Search**: Check if an element exists in the tree.
+- **Traversal**:
+  - **In-Order Traversal**: Visit left subtree, root, right subtree.
+  - **Pre-Order Traversal**: Visit root, left subtree, right subtree.
+  - **Post-Order Traversal**: Visit left subtree, right subtree, root.
+  - **Level-Order Traversal**: Visit nodes level by level.
+- **Find Min/Max**: Retrieve the smallest and largest values in the tree.
+- **Height**: Calculate the height of the tree.
+- **Is Balanced**: Determine if the tree is balanced.
+- **Clear**: Remove all elements from the tree.
 
 ### Additional Implemented Functions
 
